@@ -1,0 +1,25 @@
+#counter {
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#btns {
+    display: block;
+    text-align: center;
+}
+
+.buttons {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(134, 215, 247);
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.buttons:hover {
+    background-color: rgb(59, 175, 233)
+}

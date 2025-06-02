@@ -1,0 +1,14 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#rollbtn {
+    font-size: 5em;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+
+.randlabel {
+    font-size: 10em;
+}

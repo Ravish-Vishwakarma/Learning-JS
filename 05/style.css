@@ -1,0 +1,10 @@
+#submitbtn {
+    display: block;
+    padding: 5px 5px;
+    font-size: 1.5em;
+    margin: 5px 0px;
+}
+
+#result {
+    font-size: 3em;
+}
