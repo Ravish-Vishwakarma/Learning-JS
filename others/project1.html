@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html>
+
+<head></head>
+
+<body>
+    <script>
+        let uscore = 0;
+        let cscore = 0;
+        // 1 = rock
+        // 2 = scissor
+        // 3 = paper
+        function whowin(uinput) {
+            cinput = Math.floor(Math.random() * 3) + 1;
+            function cwhat(no) {
+                if (no == 1) {
+                    return "Rock";
+                } else if (no == 2) {
+                    return "Scissor";
+
+                } else {
+                    return "Paper";
+                }
+            }
+            if (uinput == cinput) {
+                alert(`Tie \nYou: ${cwhat(uinput)}\nComputer: ${cwhat(cinput)}`);
+            } else if (uinput == 1 && cinput == 2) {
+                uscore += 1
+                alert(`You Won \nYou: ${cwhat(uinput)}\nComputer: ${cwhat(cinput)}`);
+            } else if (uinput == 2 && cinput == 3) {
+                uscore += 1
+                alert(`You Won \nYou: ${cwhat(uinput)}\nComputer: ${cwhat(cinput)}`);
+            } else if (uinput == 3 && cinput == 1) {
+                uscore += 1
+                alert(`You Won \nYou: ${cwhat(uinput)}\nComputer: ${cwhat(cinput)}`);
+            } else {
+                cscore += 1
+                alert(`You Lose \nYou: ${cwhat(uinput)}\nComputer: ${cwhat(cinput)}`);
+            }
+            document.getElementById("uscore").textContent = `Your Score: ${uscore}`;
+            document.getElementById("cscore").textContent = `Computer Score: ${cscore}`;
+        };
+    </script>
+    <h1 style="text-align: center;">Rock Paper Scissor</h1>
+    <button onclick="whowin(1);">Rock</button>
+    <button onclick="whowin(2);">Scissor</button>
+    <button onclick="whowin(3);">Paper</button>
+
+    <p id="uscore"></p>
+    <p id="cscore"></p>
+    <p></p>
+</body>
+
+</html>

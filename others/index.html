@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        p {
+            background-color: #6A9C89;
+            color: #FFF5E4;
+            border-color: black;
+            border-width: 0.5px;
+            border-radius: 3px;
+            border-style: ridge;
+            padding: 3px;
+            margin: 20px;
+            font-size: 20px;
+        }
+
+        #new {
+            color: #FFA725;
+            background-color: #FFF5E4;
+        }
+
+        p.imp {
+            background-color: red;
+        }
+
+        h1 {
+            color: chocolate;
+            text-align: center;
+        }
+
+        body {
+            background-color: #C1D8C3;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script>
+        let cq = 3;
+        let name = "Ravish";
+        console.log(name);
+        console.log(2 + 2);
+    </script>
+    <h1>Notes</h1>
+    <button onclick="console.log(`Cart Items, ${cq}`);">Cart</button>
+    <button onclick="
+    cq = cq +1;
+    console.log(`Cart Items, ${cq}`);">Add Item</button>
+    <p>My pass : **********</p>
+    <p id="new">paragraph 2</p>
+    <p id="new">paragraph 3</p>
+    <p id="new">paragraph 4</p>
+    <p class="imp"> Important Message</p>
+
+</body>
+
+</html>
